@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+{% extends "bootstrap/base.html" %}
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        {% block title %}
+        Word definition API
+        {% endblock %}
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    <body>
+        
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        {% block content %}
+        <h1 class="text-cernter" style="font-size:8vw;" >Word Definition API</h1>
+        <p class="text-cernter" style="font-size:2vw;" >URL endpoint format: http://127.0.0.1:5001/api/v1/word</p>
+        <p class="text-cernter" style="font-size:2vw;" >URL endpoint Example: http://127.0.0.1:5001/api/v1/Coffee</p>
+        {% endblock %}
+    </body>
+</html>
